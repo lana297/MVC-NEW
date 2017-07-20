@@ -1,0 +1,5 @@
+Options +MultiViews
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteRule !.*\.(js|ico|gif|jpg|png|css|pdf)$ index.php%{REQUEST_URI} [L]

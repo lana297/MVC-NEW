@@ -1,0 +1,12 @@
+Hello, my name is {{ name }}! The college I go to is {{ college }}.  </br>
+
+{% if year == 3 %}
+<br/> Third year? Almost done! (: </br></br>
+{% endif %}
+
+
+
+{% for student in students %}
+		First name:{{ student.name }}. Last name:{{ student.lastname }}.</br>
+{% endfor %}
+
